@@ -18,3 +18,9 @@ code {
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.titre{
+    border-bottom: 2px solid blue;
+    padding: 20px;
+    margin-bottom: 50px;
+}
