@@ -1,0 +1,30 @@
+
+.banner{
+    height:200px;
+    background-image: url(../../public/images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main{
+    text-align: center;
+}
+
+.titre{
+    border-bottom: 2px solid blue;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.carte-services{
+    text-align: center;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+
+.bi-bi-code-slash{
+    color: blue;
+    margin-bottom: 40px;
+}
