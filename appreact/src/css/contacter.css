@@ -1,0 +1,27 @@
+
+
+.form-titre{
+    border-bottom: 3px solid blue ;
+    margin-bottom: 40px;
+    padding-top:20px;
+}
+
+.form{
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.form-contact{
+    text-align: center;
+}
+
+.icon{
+    padding-right: 5px;
+}
+
+.contact{
+    text-align: start;
+}
+.map-coordonnees{
+  margin-top: 15px;
+}
