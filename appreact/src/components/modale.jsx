@@ -9,10 +9,11 @@ import '../css/modale.css'
 function Modale() {
   
   const [lgShow, setLgShow] = useState(false);
+  const handleClose = () => setLgShow(false);
 
   return (
     <>
-      <Button onClick={() => setLgShow(true)} variant="danger">En Savoir plus</Button>
+      <Button onClick={() => setLgShow(true)} variant="danger">En savoir plus</Button>
       
       <Modal
         size="lg"
@@ -72,7 +73,7 @@ function Modale() {
         </Row>       
         </Modal.Body>
         <Modal.Footer className='bg-dark text-light'>
-          <Button variant="secondary" >
+          <Button variant="secondary" onClick={handleClose}>
             Fermer
           </Button>
         </Modal.Footer>
