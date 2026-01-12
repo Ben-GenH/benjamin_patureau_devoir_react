@@ -39,6 +39,7 @@ function portfolio () {
                                             <Card.Text>
                                             Site de vente de produits frais en ligne
                                             </Card.Text>
+                                            {/*Je n'ai pas reussi changer la couleur au survol comme demandé*/}
                                             <Button variant="primary">Voir le site</Button>
                                         </Card.Body>
                                         <Card.Footer className="text-muted">Site réalisé avec PHP et MySQL</Card.Footer>

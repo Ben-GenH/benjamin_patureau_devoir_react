@@ -28,11 +28,11 @@ function contacter () {
                                 <h2> Formulaire de contact</h2>
                             </div>
                             <Form className='form-contact'>
-                                <Form.Control type="text" placeholder="Votre nom" className='mb-2'/>
-                                <Form.Control type="email" placeholder="Votre adresse email" className='mb-2'/>
-                                <Form.Control type="tel" placeholder="Votre numéro de téléphone" className='mb-2'/>
-                                <Form.Control type="text" placeholder="Sujet" className='mb-2'/>
-                                <Form.Control as="textarea" rows={10} placeholder="Votre message" className='mb-2'/>
+                                <Form.Control required type="text" placeholder="Votre nom" className='mb-2'/>
+                                <Form.Control required type="email" placeholder="Votre adresse email" className='mb-2'/>
+                                <Form.Control required type="tel" placeholder="Votre numéro de téléphone" className='mb-2'/>
+                                <Form.Control required type="text" placeholder="Sujet" className='mb-2'/>
+                                <Form.Control required as="textarea" rows={10} placeholder="Votre message" className='mb-2'/>
                                 <Button variant="primary" type="submit" >Envoyer</Button>
                             </Form>            
                         </Col>

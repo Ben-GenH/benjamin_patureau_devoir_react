@@ -8,21 +8,23 @@ import Services from '../pages/services';
 import Portfolio from '../pages/portfolio';
 import Contacter from '../pages/contacter';
 import Mentionslegales from '../pages/mentionslegales';
+import { useLocation } from 'react-router-dom';
 
 
 function Navigation() {
+   const location = useLocation();
   return (
-    
+    <><meta name="robots" content="noindex"/>
     <header>
-        <Navbar   expand="lg"  bg="dark" data-bs-theme="dark">
+      <Navbar expand="lg" bg="dark" data-bs-theme="dark">
         <Container fluid>
           <Navbar.Brand className='text-uppercase'>
             John Doe
           </Navbar.Brand>
-          <Navbar.Toggle  aria-controls='reponsive-navbar-nav'/>
-          <Navbar.Collapse  className="justify-content-end" id='responsive-navbar-nav'>
-            <Nav  className='text-uppercase'>
-              <Nav.Link href='/' >Home</Nav.Link>
+          <Navbar.Toggle aria-controls='reponsive-navbar-nav' />
+          <Navbar.Collapse className="justify-content-end" id='responsive-navbar-nav'>
+            <Nav variant='underline' activeKey={location.pathname} className='text-uppercase'>
+              <Nav.Link href='/'>Home</Nav.Link>
               <Nav.Link href='/services'>Services</Nav.Link>
               <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
               <Nav.Link href='/contacter'>Contacter</Nav.Link>
@@ -38,9 +40,9 @@ function Navigation() {
         <Route path='/Portfolio' element={<Portfolio />} />
         <Route path='/Contacter' element={<Contacter />} />
         <Route path='/Mentionslegales' element={<Mentionslegales />} />
-      
+
       </Routes>
-    </header>
+    </header></>
     
 
      );

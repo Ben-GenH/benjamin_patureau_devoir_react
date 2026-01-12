@@ -5,10 +5,13 @@
     background-size: cover;
     background-position: center;
     height: 1100px;
-    opacity:0,8;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.Hero-content{
+    margin-bottom: 20px;
 }
 
 
@@ -16,9 +19,11 @@
     display: flex;
     margin-top: 50px;
     margin-bottom: 40px;
-    
     padding: 40px;
-    
+}
+
+.a-propos, .competences{
+    text-align: start;
 }
 
 .titre-a-propos, .titre-competences{
@@ -27,10 +32,19 @@
     margin-bottom: 30px;
 }
 
+.a-propos-text{
+    font-weight: 400;
+}
+
 .about-picture{
     width: 100%;
     height:300px;
     background-image: url(../../public/images/john-doe-about.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 20px;
+}
+
+.code-competences{
+    margin-bottom: 15px;
 }
